@@ -273,7 +273,7 @@ $res = $obj->table('test')->field('id,name,url')->where("name='迹忆博客'")->
 返回值为 当前对象 object
     
 11）sql($sql)  执行指定的sql语句
- ```Php     
+```Php     
 $sql = "select name,url from test where name='迹忆博客'";
     
 $res = $obj->sql($sql);
