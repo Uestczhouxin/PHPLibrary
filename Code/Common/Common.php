@@ -1,13 +1,17 @@
 <?php
 /**
- * ×÷Õß£º¼£Òä
- * ¸öÈË²©¿Í£º¼£Òä²©¿Í
- * ²©¿Íurl£ºwww.onmpw.com
+ * ä½œè€…ï¼šè¿¹å¿†
+ * ä¸ªäººåšå®¢ï¼šè¿¹å¿†åšå®¢
+ * åšå®¢urlï¼šwww.onmpw.com
  * ************
- * CommonÀà ¶¨ÒåÒ»Ð©¹«¹²º¯Êý
+ * Commonç±» å®šä¹‰ä¸€äº›å…¬å…±å‡½æ•°
  * ************
  */
 class Common{
+   /**
+     * è‡ªå®šä¹‰å®žçŽ°json_encodeåŠŸèƒ½çš„å‡½æ•°
+     * @param mixed $data
+     */
     static public function onmpw_json_encode($data){
         if(is_object($data)) return false;
         if(is_array($data)){
