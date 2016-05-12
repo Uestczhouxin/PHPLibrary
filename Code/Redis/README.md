@@ -2,7 +2,7 @@ Redis操作类由 [迹忆博客](http://www.onmpw.com) 提供
 # Redis操作类
 下面我们来简单介绍一下使用方法
 
-1. 实例化Redis操作对象
+1.实例化Redis操作对象
 
 ```php
 object Redis($host,$port,[$quiet_fail[,$timeout])
@@ -16,7 +16,7 @@ object Redis($host,$port,[$quiet_fail[,$timeout])
 $obj = new Redis('192.168.144.133',6379);
 ```
 
-2. command()函数
+2.command()函数
 
 ```php
 Redis command()
@@ -29,7 +29,7 @@ $obj->command('set','myblog','迹忆博客')
 ```
 command()函数的功能可以认为是预处理命令，只是将要执行的命令准备好，等待其他操作来执行。
 
-3. exec() 函数
+3.exec() 函数
 
 ```php
 int exec()
@@ -40,7 +40,7 @@ int exec()
 $obj->command('set','myblog','迹忆博客')->exec();
 ```
 
-4. result()函数
+4.result()函数
 
 ```php
 mixed result()
@@ -55,7 +55,7 @@ $result = $obj->result();
 var_dump($result);
 ```
 
-5. get_errinfo()函数
+5.get_errinfo()函数
 
 ```php
 string get_errinfo()
