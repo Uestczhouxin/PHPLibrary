@@ -29,4 +29,4 @@ session_set_save_handler($session,true);
 session_start();
 $_SESSION['name'] = 'onmpw';
 ```
-关于如何重写对session机制进行重写，可以参考[《PHP重写session机制》](http://www.onmpw.com)这篇文章
+关于如何重写对session机制进行重写，可以参考[《PHP重写session机制》](http://www.onmpw.com/tm/xwzj/prolan_143.html)这篇文章
