@@ -6,3 +6,5 @@
 
 Redis操作类redis.php
 
+session重写类onmpwSessionHandler——将session存储到redis中
+
