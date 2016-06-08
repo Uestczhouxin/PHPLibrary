@@ -240,6 +240,29 @@ class Db{
         return $this;
     }
     /**
+     * 得到数据库中的数据表
+     * @access public
+     * @param string $dbname 指定数据库
+     * @return Ambigous <boolean, string, unknown>
+     */
+    public function getTables($dbname = ''){
+        $sql = !empty($dbname)?"SHOW TABLES FROM ".$dbname:"SHOW TABLES";
+        $result = $this->query($sql);
+        $tables = array();
+        foreach($result as $key=>$val){
+            $tables[$key] = current($val);
+        }
+        return $tables;
+    }
+    /**
+     * 得到数据库受影响的行数
+     * @access public
+     * @return int
+     */
+    public function getRowNum(){
+        if(!empty($this->affectNum)) return $this->affectNum;
+    }
+    /**
      * 设置要查询的表字段，如果没有设置，则默认查询表的所有字段
      * @param string $field
      * @return Db   返回当前对象
