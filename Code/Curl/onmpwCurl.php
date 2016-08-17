@@ -267,12 +267,3 @@ class OnmpwCurl{
     }
     
 }
-$cobj = new OnmpwCurl();
-$options = array(
-    CURLOPT_URL=>"http://www.cb.com.cn/index.php?m=content&c=index&a=show&catid=36&id=1136186&all",
-//     CURLOPT_URL=>'http://www.guandian.cn/article/20150325/158644.html',
-    CURLOPT_CONNECTTIMEOUT=>5
-//     CURLOPT_TIMEOUT=>5
-);
-$cobj->setopt($options)->checkUrl();
-echo "http_code=>".$cobj->get_http_code(),"<br />","errno=>".$cobj->errno(),"<br />","error=>".$cobj->error();
