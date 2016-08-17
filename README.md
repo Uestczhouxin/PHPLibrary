@@ -8,3 +8,4 @@ Redis操作类redis.php
 
 session重写类onmpwSessionHandler——将session存储到redis中
 
+php curl 验证url的有效性
